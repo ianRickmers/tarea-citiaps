@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+.nuxt/
+dist/
+
+# Go bin/cache
+*.exe
+*.out
+*.test
+*.log
+vendor/
+
+# IDEs
+.vscode/
+.idea/
+
+# Env
+.env

@@ -1,0 +1,48 @@
+@use '../utils/variables';
+
+.header {
+    background-color: variables.$main-color;
+    box-shadow: variables.$shadow;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+
+        &-img {
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        }
+
+        &-text {
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        background-color: variables.$primary;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: darken(variables.$primary, 10%);
+        }
+    }
+}
