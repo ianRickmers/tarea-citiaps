@@ -14,11 +14,15 @@ cd tarea-citiaps
 
 ### 2. Correr el Back-End
 
-cd backend
+```
+cd user_manager_be
 go run main.go
+```
 
 ### 3. Correr el Front-End
 
-cd frontend
+```
+cd user_manager_fe
 npm install
 npm run dev
+```
